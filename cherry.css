@@ -1,0 +1,94 @@
+/* Assure que le body et le html occupent toute la hauteur */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+/* Slide en plein écran */
+.slide {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+
+
+    transform: translateX(0); /* Position de départ */
+    transition: transform 0.8s ease; /* Transition fluide */
+}
+
+/* Animation de défilement vers la droite */
+.slide-out-right {
+    transform: translateX(100%); /* Fait sortir la slide vers la droite */
+}
+
+.slide-in-right {
+    transform: translateX(0); /* Fait entrer la slide depuis la droite */
+}
+
+
+
+.Cherry {
+    background-color: #f86f85; 
+}
+
+.Exotic {
+    background-color: #d86df0; 
+}
+
+.Apple {
+    background-color: #f8bf7a; 
+}
+
+/* Bouton de slide */
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: #000000;
+    border-radius: 5px;
+}
+
+
+/* Conteneur des images de fruits */
+.sliding-images {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre parfaitement le conteneur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre les images */
+    transition: transform 0.8s ease;
+    z-index: 1;
+
+}
+
+
+#slideImage {
+    position: absolute;
+    width: 500px;
+    height: 700px;
+    z-index: 1;
+} 
+
+
+#slideImage2 {
+    position: absolute;
+    width: 910px;
+    height: 885px;
+   
+}
+
+h2 {
+    font-size: 20rem;
+}

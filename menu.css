@@ -1,0 +1,65 @@
+
+
+
+.menu a {
+    /* tous les liens a à l'intérieur de la balise nav */
+
+    text-decoration: none;
+    /* pas d'héritage avec effet souligné */
+    color: #0e0d0d;
+    /* couleur du texte */
+    line-height: 50px;
+    /* interligne */
+    font-size: 23px;
+    /* taille du texte */
+    border-radius: 10px;
+}
+
+.menu {
+    max-width: 70rem;
+    margin-right: 50rem;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+
+    z-index: 10;
+
+}
+
+
+.menu li {
+    display: inline;
+    margin-right: 30px;
+    
+}
+@media (max-width: 810px) {
+    .menu a {
+        font-size: 14px;
+    };
+    .menu  {
+        width: 100%;
+    }
+    .menu  li{
+        width: 100%;
+    }
+    .text{
+        width: 100%;
+    }
+}
+
+
+/* Titre du menu aligné à gauche */
+.menu-title {
+    font-size: 24px;
+    margin: 0;
+}
+
+
+
+
+
+
