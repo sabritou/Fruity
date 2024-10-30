@@ -1,17 +1,8 @@
-
-
-
 .menu a {
-    /* tous les liens a à l'intérieur de la balise nav */
-
-    text-decoration: none;
-    /* pas d'héritage avec effet souligné */
+     text-decoration: none;
     color: #0e0d0d;
-    /* couleur du texte */
     line-height: 50px;
-    /* interligne */
     font-size: 23px;
-    /* taille du texte */
     border-radius: 10px;
 }
 
@@ -52,7 +43,6 @@
 }
 
 
-/* Titre du menu aligné à gauche */
 .menu-title {
     font-size: 24px;
     margin: 0;
